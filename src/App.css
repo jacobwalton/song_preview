@@ -1,38 +1,53 @@
+* {
+  font-family: "Kanit", sans-serif;
+  font-weight: bolder;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(161, 1, 1);
+  line-height: 1px;
+}
+
 .App {
+  text-align: center;
+  background-color: rgb(224, 213, 190);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#audo {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.question {
+  /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
+  font-weight: bolder;
+  color: rgb(161, 1, 1);
+  font-size: 50px;
+}
+input {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 0 auto;
+  width: 90%;
+
+  -webkit-text-stroke-width: 1px;
+
+  color: rgb(161, 1, 1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#submit {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.visualizer {
+  height: fit-content;
+  overflow: visible;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* mix-blend-mode: darken; */
 }
