@@ -3,7 +3,6 @@
   font-weight: bolder;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: rgb(161, 1, 1);
-  line-height: 1px;
 }
 
 .App {
@@ -23,6 +22,8 @@
 }
 
 .question {
+  display: flex;
+  flex-direction: column;
   /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
   font-weight: bolder;
   color: rgb(161, 1, 1);
@@ -50,4 +51,12 @@ input {
   overflow: visible;
 
   /* mix-blend-mode: darken; */
+}
+@media only screen and (max-width: 800px) {
+  * {
+    width: 90%;
+  }
+  * {
+    flex-wrap: wrap;
+  }
 }

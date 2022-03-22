@@ -28,7 +28,10 @@ function App() {
   return (
     <div className="App">
       <div className="question">
-        <h3>WHAT'S THE SECRET CODE?</h3>
+        <h3 id="question">
+          WHAT'S THE <br />
+          SECRET CODE?
+        </h3>
         <form onSubmit={handleSubmit}>
           <input type="password" name="answer" onChange={handleChange} />
           <input type="submit" id="submit" />
